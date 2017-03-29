@@ -50,9 +50,24 @@
                                     <action selector="writeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qAh-W8-s5f"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZq-Oz-cfC">
+                                <rect key="frame" x="16" y="629" width="77" height="30"/>
+                                <state key="normal" title="Sync Other"/>
+                                <connections>
+                                    <action selector="syncOtherButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pJi-hE-mMD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vn7-xw-C2W">
+                                <rect key="frame" x="279" y="629" width="80" height="30"/>
+                                <state key="normal" title="Write Other"/>
+                                <connections>
+                                    <action selector="writeOtherButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pAS-in-16f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Vn7-xw-C2W" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9pa-7S-Naa"/>
                             <constraint firstItem="gaQ-NY-KDZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cmz-5E-6iN"/>
                             <constraint firstItem="Izc-gU-0Ic" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="D5a-na-5db"/>
                             <constraint firstItem="U3B-aU-HkN" firstAttribute="top" secondItem="Izc-gU-0Ic" secondAttribute="bottom" constant="8" id="EpY-FA-Rwm"/>
@@ -62,12 +77,17 @@
                             <constraint firstItem="27G-lx-0T6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q1j-Su-H6c"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Izc-gU-0Ic" secondAttribute="trailing" id="VVf-SQ-iYw"/>
                             <constraint firstItem="27G-lx-0T6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.9" id="gV8-rX-jCB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iZq-Oz-cfC" secondAttribute="bottom" constant="8" id="hkJ-NJ-ZoJ"/>
+                            <constraint firstItem="iZq-Oz-cfC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="n3d-xT-mUe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Vn7-xw-C2W" secondAttribute="bottom" constant="8" id="s8s-7H-GLj"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="fetchButton" destination="gaQ-NY-KDZ" id="T8V-za-M6X"/>
+                        <outlet property="syncOtherButton" destination="iZq-Oz-cfC" id="Pjw-3K-zhi"/>
                         <outlet property="textField" destination="Izc-gU-0Ic" id="rxR-nr-GT4"/>
                         <outlet property="writeButton" destination="U3B-aU-HkN" id="HJv-Ud-aNd"/>
+                        <outlet property="writeOtherButton" destination="Vn7-xw-C2W" id="9pn-XQ-bUg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
